@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 
+import styles from './style.module.css'
 
 
 export default function () {
@@ -13,7 +14,7 @@ export default function () {
     const something = () => {
         if (data.data) {
 
-            return data.data.map((e) => { return <p>{e.name}</p> })
+            return data.data.map((e) => { return <p className={styles.para}>{e.name}</p> })
         } else {
             <h1>NO DATA!!!</h1>
         }
@@ -22,7 +23,7 @@ export default function () {
 
     return (
         <section>
-            <div>
+            <div className={styles.container}>
                 {data.data ? something() : "nothing"}
             </div>
         </section>

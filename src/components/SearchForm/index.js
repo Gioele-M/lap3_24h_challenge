@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { GetResult } from "../../actions";
+import styles from './style.module.css'
 
 const SearchForm = ({ GetResult }) => {
 
@@ -23,9 +23,9 @@ const SearchForm = ({ GetResult }) => {
     return (
         <div>
             <form onSubmit={onFormSubmit}>
-                <label htmlFor="username">Username</label>
-                <input type="text" id="username" value={user} onChange={onUserChange} />
-                <button type="submit">submit</button>
+                <label htmlFor="username">Username:</label>
+                <input className={styles.username} placeholder="Insert github username" type="text" id="username" value={user} onChange={onUserChange} />
+                <button className={styles.button} type="submit">submit</button>
             </form>
         </div>
     )
