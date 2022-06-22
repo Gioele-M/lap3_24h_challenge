@@ -1,25 +1,25 @@
 .container {
-    margin-top: 5%;
     margin-right: auto;
     margin-left: auto;
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    width: 50%
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 90%
 }
 
 .para {
-    font-weight: 800;
-    width: auto;
+    font-weight: 1000;
+    /* width: auto; */
     text-decoration: none;
-    background-color: #5f5f5f;
+    background-color: #55d0f2;
     color: #ffffff;
     margin-top: 1px;
     border-radius: 10px;
     padding: 8px 6px 8px 6px;
-    border-top: 1px solid #5f5f5f;
-    border-right: 1px solid #5f5f5f;
-    border-bottom: 1px solid #5f5f5f;
-    border-left: 1px solid #5f5f5f;
-    font-size: 16px;
+    border-top: 1px solid #55d0f2;
+    border-right: 1px solid #55d0f2;
+    border-bottom: 1px solid #55d0f2;
+    border-left: 1px solid #55d0f2;
+    font-size: 20px;
 }

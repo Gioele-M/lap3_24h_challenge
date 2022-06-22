@@ -4,13 +4,13 @@ import { useSelector, useDispatch } from 'react-redux';
 import { SearchForm, RenderRepo, UserInfo } from "../../components";
 import { GetResult, GetUsername } from "../../actions";
 
-
+import styles from "./style.module.css"
 
 const Home = () => {
 
 
     const dispatch = useDispatch();
-    
+
     const searchUserName = searchTerm => dispatch(GetUsername(searchTerm))
 
     const searchResult = searchTerm => dispatch(GetResult(searchTerm));
@@ -18,7 +18,7 @@ const Home = () => {
 
     return (
         <>
-            <h1>Home page</h1>
+            <h1 className={styles.title} >GitHub Search</h1>
             <SearchForm GetResult={searchResult} GetUsername={searchUserName} />
             <UserInfo />
             <RenderRepo />
