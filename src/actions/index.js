@@ -34,7 +34,7 @@ export const GetUsername = username => {
             let opts = { headers: { 'Accept': 'application/json' } }
             let { data } = await axios.get(`https://api.github.com/users/${username}`, opts)
             console.log(data)
-            const something = { login: data.data.login, name: data.data.name, publicRepos: data.data.public_repos, followers: data.data.followers, following: data.data.following }
+            const something = { login: data.login, name: data.name, publicRepos: data.public_repos, followers: data.followers, following: data.following }
             dispatch(loadResult(something))
         } catch (err) {
             console.warn(err.message);

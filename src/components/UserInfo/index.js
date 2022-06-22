@@ -10,10 +10,12 @@ export default function () {
     // console.log(data)
     const something = () => {
         console.log(data)
-        if (data.data) {
+        if (data) {
             console.log('i have been called')
 
-            return data.data.map((e) => { return <p >{e.name}</p> })
+            const name = data.name==null ? "Not Registered" : data.name
+
+            return <p >Name: {name}, Login: {data.login}, Repos: {data.publicRepos}, Followers: {data.followers}, Following: {data.following}</p>
         } else {
             <h1>NO DATA!!!</h1>
         }
@@ -23,7 +25,7 @@ export default function () {
     return (
         <section>
             <div>
-                <p>{data ? something() : "nothing"}</p>
+                {data ? something() : <p>Nothing here</p>}
             </div>
         </section>
     )
