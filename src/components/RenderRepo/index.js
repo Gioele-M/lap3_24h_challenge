@@ -12,16 +12,18 @@ export default function () {
     }
     const something = () => {
         if (data.data) {
-            data.data.map((e) => { return e.name })
+
+            return data.data.map((e) => { return <p>{e.name}</p> })
         } else {
             <h1>NO DATA!!!</h1>
         }
     }
 
+
     return (
         <section>
             <div>
-                {something}
+                {data.data ? something() : "nothing"}
             </div>
         </section>
     )
