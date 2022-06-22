@@ -8,9 +8,7 @@ export default function () {
 
     const data = useSelector(state => state.username)
 
-    if (data.data) {
-        console.log(data.data[2])
-    }
+
     const something = () => {
         if (data.data) {
 
@@ -24,7 +22,7 @@ export default function () {
     return (
         <section>
             <div className={styles.container}>
-                {data.data ? something() : "nothing"}
+                {data.data ? something() : "Please input a github username"}
             </div>
         </section>
     )

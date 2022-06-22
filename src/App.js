@@ -11,13 +11,11 @@ function App() {
       <Header />
 
       <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/about" element={<About/>} />
-        <Route path="/repo" element={<RepoPage/>} />
-      </Routes> 
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/repo" element={<RepoPage />} />
+      </Routes>
 
-      <Footer />
-      
     </div>
   );
 }
