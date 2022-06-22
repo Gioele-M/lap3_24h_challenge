@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { GetResult } from "../../actions";
 
 const SearchForm = () => {
 
@@ -7,11 +7,13 @@ const SearchForm = () => {
 
     const onFormSubmit = (e) => {
         e.preventDefault()
-    
+        GetResult()
+
+
         // dispatch({type:'TITLE', payload: song})
         // dispatch({type: 'ARTIST', payload:artist})
 
-        
+
     }
 
     const onUserChange = (e) => {
@@ -22,14 +24,14 @@ const SearchForm = () => {
     return (
 
 
-        <div>   
-                <form onSubmit={onFormSubmit}>
-                    <label htmlFor="username">Username</label>
-                    <input type="text" id="username" value={user} onChange={onUserChange} />
-                    <button type="submit">submit</button>
-                </form>
-            </div>
-    
+        <div>
+            <form onSubmit={onFormSubmit}>
+                <label htmlFor="username">Username</label>
+                <input type="text" id="username" value={user} onChange={onUserChange} />
+                <button type="submit">submit</button>
+            </form>
+        </div>
+
 
     )
 
