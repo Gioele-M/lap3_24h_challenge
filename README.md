@@ -1,3 +1,58 @@
+
+
+# Actual readme
+
+
+- Action folder
+    - For api calls
+
+- Store
+    - (?)
+    - can do later
+
+- Call fetch function
+
+
+
+- Components
+    [ ] Username info card to render after fetch 
+    [ ] Repo results to render under form
+    [ ] Repo info div for RepoPage
+
+
+- Layout
+    [ ] Footer (?) not sure what to put
+    [ ] Header -> Navbar - back button
+
+- Reducer
+
+- Pages
+    [ ] Info for about page
+    [ ] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
