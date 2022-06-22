@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from './style.module.css'
 
-const SearchForm = ({ GetResult }) => {
+const SearchForm = ({ GetResult, GetUsername }) => {
 
     const [user, setUser] = useState('')
 
@@ -9,7 +9,8 @@ const SearchForm = ({ GetResult }) => {
 
     const onFormSubmit = (e) => {
         e.preventDefault()
-        // console.log(user)
+
+        GetUsername(user)
         GetResult(user)
         setUser('')
 
