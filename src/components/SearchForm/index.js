@@ -4,31 +4,23 @@ import { GetResult } from "../../actions";
 const SearchForm = ({ GetResult }) => {
 
     const [user, setUser] = useState('')
-    console.log(GetResult)
+
+    // console.log(GetResult)
+
     const onFormSubmit = (e) => {
         e.preventDefault()
         // console.log(user)
         GetResult(user)
         setUser('')
 
-
-        // dispatch({type:'TITLE', payload: song})
-        // dispatch({type: 'ARTIST', payload:artist})
-
-
     }
 
     const onUserChange = (e) => {
         const input = e.target.value
         setUser(input)
-        // console.log(user)
-
-
     }
 
     return (
-
-
         <div>
             <form onSubmit={onFormSubmit}>
                 <label htmlFor="username">Username</label>
@@ -36,8 +28,6 @@ const SearchForm = ({ GetResult }) => {
                 <button type="submit">submit</button>
             </form>
         </div>
-
-
     )
 
 

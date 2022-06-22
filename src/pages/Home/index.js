@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from 'react-redux';
 
-import { SearchForm } from "../../components";
+import { SearchForm, RenderRepo } from "../../components";
 import { GetResult } from "../../actions";
 
 
@@ -22,7 +22,7 @@ const Home = () => {
         <>
             <h1>Home page</h1>
             <SearchForm GetResult={search} />
-
+            <RenderRepo />
         </>
     )
 }
