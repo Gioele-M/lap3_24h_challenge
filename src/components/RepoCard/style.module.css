@@ -1,29 +1,43 @@
-.container {
+/* .container {
     margin-top: 5%;
     margin-right: auto;
     margin-left: auto;
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    width: 50%
-}
+    flex-direction: row;
+    width: 80%;
+} */
 
 .para {
-    font-weight: 800;
-    width: auto;
+    font-weight: 1000;
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 40%;
     text-decoration: none;
-    background-color: #5f5f5f;
+    background-color: #4fb0cb;
     color: #ffffff;
     margin-top: 1px;
     border-radius: 10px;
     padding: 8px 6px 8px 6px;
-    border-top: 1px solid #5f5f5f;
-    border-right: 1px solid #5f5f5f;
-    border-bottom: 1px solid #5f5f5f;
-    border-left: 1px solid #5f5f5f;
+    border-top: 1px solid #4fb0cb;
+    border-right: 1px solid #23687b;
+    border-bottom: 1px solid #23687b;
+    border-left: 1px solid #4fb0cb;
+    border-width: 3px;
     font-size: 16px;
 }
 
-.repoName{
-    font-size: large;
+.repoName {
+    font-size: 22px;
+}
+
+.list {
+    display: flex;
+    margin: auto;
+    width: 300px;
+    justify-content: space-between;
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 15px;
+
 }

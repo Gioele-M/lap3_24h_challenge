@@ -22,11 +22,11 @@ const SearchForm = ({ GetResult, GetUsername }) => {
     }
 
     return (
-        <div>
-            <form onSubmit={onFormSubmit}>
-                <label htmlFor="username">Username:</label>
-                <input className={styles.username} placeholder="Insert github username" type="text" id="username" value={user} onChange={onUserChange} />
-                <button className={styles.button} type="submit">submit</button>
+        <div >
+            <form className={styles.container} onSubmit={onFormSubmit}>
+                <label className={styles.label} htmlFor="username">Username: </label>
+                <input className={styles.username} placeholder="Insert GitHub Username" type="text" id="username" value={user} onChange={onUserChange} />
+                <button className={styles.button} type="submit">Submit!</button>
             </form>
         </div>
     )
