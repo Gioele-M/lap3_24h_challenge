@@ -1,5 +1,3 @@
-//actions here with fetching
-import React, { useState } from 'react';
 import axios from 'axios';
 
 
