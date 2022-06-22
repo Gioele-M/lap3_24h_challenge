@@ -15,7 +15,9 @@ export default function () {
 
             const name = data.name==null ? "Not Registered" : data.name
 
-            return <p >Name: {name}, Login: {data.login}, Repos: {data.publicRepos}, Followers: {data.followers}, Following: {data.following}</p>
+            if(data.login == null || data.login == '') return <p>Please insert a GitHub username</p>
+
+            return <p >Name: {name}, Login: {data.login}, Repos: {data.publicRepos}, Followers: {data.followers}, Following: {data.following}</p>
         } else {
             <h1>NO DATA!!!</h1>
         }

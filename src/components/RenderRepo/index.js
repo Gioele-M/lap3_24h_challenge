@@ -28,7 +28,7 @@ export default function () {
     return (
         <section>
             <div className={styles.container}>
-                {data.data ? something() : "Please input a github username"}
+                {data.data ? something() : ""}
             </div>
         </section>
     )
