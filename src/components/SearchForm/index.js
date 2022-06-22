@@ -7,7 +7,9 @@ const SearchForm = () => {
 
     const onFormSubmit = (e) => {
         e.preventDefault()
-        GetResult()
+        // console.log(user)
+        GetResult(user)
+        setUser('')
 
 
         // dispatch({type:'TITLE', payload: song})
@@ -17,7 +19,10 @@ const SearchForm = () => {
     }
 
     const onUserChange = (e) => {
-        setUser(e.target.user)
+        const input = e.target.value
+        setUser(input)
+        // console.log(user)
+
 
     }
 
