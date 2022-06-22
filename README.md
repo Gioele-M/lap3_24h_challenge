@@ -9,6 +9,7 @@
 - Store
     - (?)
     - can do later
+    
 
 - Call fetch function
 
@@ -28,7 +29,7 @@
 
 - Pages
     [ ] Info for about page
-    [ ] 
+    [ ]
 
 
 
