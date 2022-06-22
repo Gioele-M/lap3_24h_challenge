@@ -1,11 +1,23 @@
 import './App.css';
 
+import { Routes, Route } from 'react-router-dom'
+
+import { Header, Footer } from './layout'
+import { Home, About, RepoPage } from './pages'
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Start App</h1>
-      </header>
+      <Header />
+
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/repo" element={<RepoPage/>} />
+      </Routes> 
+
+      <Footer />
+      
     </div>
   );
 }
