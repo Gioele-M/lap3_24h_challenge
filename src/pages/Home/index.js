@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector, useDispatch } from 'react-redux';
 
 import { SearchForm } from "../../components";
-
+import { GetResult } from "../../actions";
 
 
 
@@ -12,14 +12,16 @@ const Home = () => {
 
     //dispatch stuff
 
-    //const result = useSelector(state => state.result)
-    const result = ''
+    const result = useSelector(state => state.result)
+    // const result = ''
+    const dispatch = useDispatch();
 
+    const search = searchTerm => dispatch(GetResult(searchTerm));
 
     return (
         <>
             <h1>Home page</h1>
-            <SearchForm />
+            <SearchForm GetResult={search} />
 
         </>
     )

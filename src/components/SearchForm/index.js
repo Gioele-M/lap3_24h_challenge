@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { GetResult } from "../../actions";
 
-const SearchForm = () => {
+const SearchForm = ({ GetResult }) => {
 
     const [user, setUser] = useState('')
-
+    console.log(GetResult)
     const onFormSubmit = (e) => {
         e.preventDefault()
         // console.log(user)
