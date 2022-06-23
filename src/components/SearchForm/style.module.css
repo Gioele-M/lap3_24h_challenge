@@ -1,0 +1,25 @@
+.username {
+    font-size: 25px;
+    padding: 4px 6px 4px 6px;
+    border-radius: 10px;
+    margin-left: 4px;
+    width: 300px
+}
+
+.button {
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(1, 40, 67);
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.label {
+    font-size: 20px;
+}
+
+.container {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
